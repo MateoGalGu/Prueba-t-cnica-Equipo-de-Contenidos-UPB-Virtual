@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* NAV  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #10152A;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menus ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.menus ul a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.menus ul a:hover{
+    border-bottom: solid 1px #fff;
+}
+
+/*  HERO  */
+
+.hero {
+    display: flex;
+    background-image: linear-gradient(45deg, #10152A, #10152a59), url("hero.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    padding-left: 50px;
+    flex-direction: column;
+    background-attachment: fixed;
+    color: white;
+}
+
+.content-hero {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30vh;
+    align-items: left;
+    justify-content: center;
+}
+
+.title-hero {
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.description-hero {
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.callToAction {
+    width: 120px;
+    height: 35px;
+    background: #fff;
+    border: solid 1px #812;
+}
+
+.callToAction:hover{
+    margin-top: 2px;
+    background: #812;
+}
+
+.callToAction a {
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #10152A;
+}
+
+.callToAction a:hover {
+    color: #fff;
+}
+
+
+/*  SECTION  */
+
+.subtitle {
+    color: #17286b;
+}
+
+.first-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 50px;
+}
+
+.problematica {
+    padding-bottom: 20px;
+}
+
+.second-part {
+    margin: 50px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.quienes_img {
+    text-align: center;
+}
+
+.trabaja_img--left {
+    text-align: left;
+}
+
+.quienes_picture {
+    max-width: 80%;
+}
+
+.trabaja_picture {
+    max-width: 80%;
+}
+
+.quienes_paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.trabaja_paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* form  */
+
+.fondo {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #812, #17286b);
+    padding: 1vh;
+}
+
+.formulario {
+    width: 400px;
+    background: #17286b;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #17286b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: solid 1px #10152A;
+    font-size: 18px;
+    color: white;
+}
+
+textarea {
+    height: 20vh;
+}
+
+.formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.formulario a {
+    color: rgb(175, 42, 62);
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    color: rgb(175, 42, 62);
+    text-decoration: underline;
+}
+
+.formulario .botons {
+    cursor: pointer;
+    width: 100%;
+    background: #812;
+    border: none;
+    border-radius: 7px;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.formulario .botons:hover {
+    cursor: pointer;
+    width: 100%;
+    background: rgb(175, 42, 62);
+    border: none;
+    border-radius: 7px;
+    padding: 11px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+/*  FOOTER */
+
+.footer {
+    height: 150px;
+    display: flex;
+    background: #10152A;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.footer_icons {
+    display: flex;
+    text-align: center;
+    width: 160px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer_icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* RESPONSIVE DISENG  */
+
+@media screen and (max-width: 800px ) {
+
+    .nav{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .logo{
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    .menus {
+        font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .content-hero {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .title-hero {
+        font-size: 2.5rem;
+    }
+
+    .description-hero {
+        font-size: 1.3rem;
+        padding-bottom: 30px;
+    }
+
+    .callToAction {
+        width: 150px;
+        height: 50px;
+    }
+
+    .callToAction a {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+
+
+    /*  SECTION  */
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .second-part {
+        grid-template-columns: 1fr;
+    }
+
+    .trabaja_img--left {
+        text-align: center;
+    }
+
+    .trabaja_picture {
+        max-width: 80%;
+    }
+
+    .quienes_paragraph {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .trabaja_paragraph {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .about_text:last-child {
+        grid-row: 3/4;
+    }
+
+
+
+
+    /*  FORM  */
+
+    .fondo {
+        padding: 1vh;
+    }
+    
+    .formulario {
+        width: 300px;
+        height: 500px;
+        padding: 20px;
+        margin-top: 60px;
+    }
+    
+    .formulario h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .controls {
+        padding: 10px;
+        margin-bottom: 14px;
+        font-size: 15px;
+        color: white;
+    }
+    
+    textarea {
+        height: 15vh;
+    }
+    
+    .formulario p {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px ) {
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-top: 15px;
+        width: 90px;
+    }
+
+    .menus {
+        font-size: 11px;
+    }
+
+    .hero {
+        margin-bottom: 100px;
+    }
+
+    .content-hero {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-hero {
+        font-size: 2rem;
+    }
+
+
+
+
+      /*  FORM  */
+
+    
+    .formulario {
+        width: 250px;
+        height: 450px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    
+    .formulario h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .controls {
+        padding: 10px;
+        margin-bottom: 13px;
+        font-size: 14px;
+    }
+}
